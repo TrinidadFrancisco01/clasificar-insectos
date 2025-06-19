@@ -10,7 +10,7 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.DEBUG)
 
 #Cargar el moddelo de entrenamiento
-model = joblib.load('model.pkl')
+model = joblib.load('modelo.pkl')
 app.logger.debug("Model loaded successfully.")
 
 @app.route('/')
